@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Bootcamp Testimonial Slider</title>
+    <link rel="stylesheet" href="src/scss/styles.scss">
+    <script type="module" src="src/ts/index.ts" defer></script>
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <figure class="image-slider">
+            <div class="image-slider__content-wrapper">
+                <img id="photo" class="image-slider__image" src="src/images/image-tanya.jpg" alt="" aria-live="polite">
+                <div class="image-slider__control" aria-label="slider control">
+                    <button id="prev" class="image-slider__button" aria-label="previous" >
+                        <svg class="image-slider__button-image" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                            <path fill="none" stroke="currentColor" stroke-width="3" d="M11 1L3 9l8 8"/>
+                        </svg>
+                    </button>
+                    <button id="next" class="image-slider__button"  aria-label="next">
+                        <svg class="image-slider__button-image" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                            <path fill="none" stroke="currentColor" stroke-width="3" d="M2 1l8 8-8 8"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </figure>
+
+        <article class="testimonial">
+                <p id="testimonial" class="testimonial__testimonial" aria-live="polite"></p>
+                <div class="testimonial__row">
+                    <p id="name" class="testimonial__name" aria-live="polite"></p>
+                    <p id="position" class="testimonial__position" aria-live="polite"></p>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
